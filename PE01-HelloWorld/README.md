@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+# CS451 PE01-HelloWorld
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Input
+* Nothing
 
-## Get started
+## Process
+1. Import three React Native Components - StyleSheet, Text, and View.
+2. Define the App functional component and export the component as the module's default export.
+    1. Start the return statement of the App component, which returns JSX.
+        1. A View component is used as a container. It applies styles from the `styles.container` object.
+            1. A Text component displaying the string "Scott Hancock".
+            2. A Text component displaying the string "BSACS".
+            3. A Text component displaying the string "City University of Seattle".
+        2. Close the View component.
+    2. Close the return statement of the App component.
+3. Close the App function definition.
+4. Start the definition of the styles object using `StyleSheet.create`.
+    1. Define the container style object.
+        1. Set the `flex` property to 1, making the container take up the full available space.
+        2. Set the `background color` property to yellow (`#ffff00`).
+        3. Set the `alignItems` property to center, centering child components horizontally.
+        4. Set the `justifyContent` property to center, centering child components vertically.
+    2. Close the container style object.
+5. Close the styles object definition.
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Output
+* Display your name, major, and school.
