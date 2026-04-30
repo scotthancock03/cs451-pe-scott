@@ -1,50 +1,11 @@
-# Welcome to your Expo app 👋
+Input
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+The user enters a todo item into a text input field and presses the submit button. This captures the input value from state. The tab bar is also used as input to select a filter option such as All, Active, or Complete, which updates the type state.
 
-## Get started
+Process
 
-1. Install dependencies
+When a todo is submitted, it is added to the todos array in state with a title, unique index, and a complete value set to false. Updating state triggers a re-render of the app. The TodoList component receives the todos array as props and renders each item in the list by creating a Todo component for every todo entry. Each todo can be marked complete or deleted using functions passed down from the App component. The tab bar updates the type state to filter which todos are shown.
 
-   ```bash
-   npm install
-   ```
+Output
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The app displays a list of todos that updates immediately when items are added, completed, or deleted. Completed items visually change when toggled, and the list updates based on the selected filter. Console logs show added todos for tracking and debugging.
